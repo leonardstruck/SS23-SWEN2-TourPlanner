@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SS23-SWEN2-TourPlanner", "SS23-SWEN2-TourPlanner\SS23-SWEN2-TourPlanner.csproj", "{EC20DE93-737B-4401-8AD7-B7F042F34DE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC20DE93-737B-4401-8AD7-B7F042F34DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC20DE93-737B-4401-8AD7-B7F042F34DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC20DE93-737B-4401-8AD7-B7F042F34DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC20DE93-737B-4401-8AD7-B7F042F34DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
