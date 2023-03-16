@@ -4,10 +4,10 @@ using SS23_SWEN2_TourPlanner;
 namespace Test;
 
 [TestFixture]
-public class DemoTest
+public class ButtonTest
 {
     [Test]
-    public void Test1()
+    public void CountIncreasesOnButtonClick()
     {
         var mainPage = new MainPage();
         mainPage.OnCounterClicked(null, null);
@@ -16,7 +16,7 @@ public class DemoTest
     }
     
     [Test]
-    public void Test2()
+    public void CountIncreasesFurtherOnButtonClick()
     {
         var mainPage = new MainPage();
         mainPage.OnCounterClicked(null, null);
