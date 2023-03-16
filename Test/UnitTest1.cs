@@ -1,4 +1,4 @@
-namespace SS23_SWEN2_Tourplanner.Test;
+namespace Test;
 
 public class Tests
 {
