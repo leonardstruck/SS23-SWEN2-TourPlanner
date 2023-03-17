@@ -1,5 +1,5 @@
 using NUnit.Framework;
-using SS23_SWEN2_TourPlanner;
+using SS23_SWEN2_TourPlanner.Views;
 
 namespace Test;
 
@@ -9,19 +9,19 @@ public class ButtonTest
     [Test]
     public void CountIncreasesOnButtonClick()
     {
-        var mainPage = new MainPage();
-        mainPage.OnCounterClicked(null, null);
+        var demoPage = new DemoPage();
+        demoPage.OnCounterClicked(null, null);
         
-        Assert.That(mainPage.count, Is.EqualTo(1));
+        Assert.That(demoPage.Count, Is.EqualTo(1));
     }
     
     [Test]
     public void CountIncreasesFurtherOnButtonClick()
     {
-        var mainPage = new MainPage();
-        mainPage.OnCounterClicked(null, null);
-        mainPage.OnCounterClicked(null, null);
+        var demoPage = new DemoPage();
+        demoPage.OnCounterClicked(null, null);
+        demoPage.OnCounterClicked(null, null);
         
-        Assert.That(mainPage.count, Is.EqualTo(2));
+        Assert.That(demoPage.Count, Is.EqualTo(2));
     }
 }
