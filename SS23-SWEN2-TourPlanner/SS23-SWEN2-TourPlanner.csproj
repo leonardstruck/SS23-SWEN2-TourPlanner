@@ -1,7 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>net7.0;net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
+        <TargetFrameworks>net7.0-maccatalyst;net7.0</TargetFrameworks>
+        <!-- Uncomment if also targeted for Mobile -->
+        <!-- <TargetFrameworks>$(TargetFrameworks);net7.0-android;net7.0-ios</TargetFrameworks> -->
         <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
         <!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
         <!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
@@ -12,7 +14,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
 
         <!-- Display name -->
-        <ApplicationTitle>SS23-SWEN2-TourPlanner</ApplicationTitle>
+        <ApplicationTitle>TourPlanner</ApplicationTitle>
 
         <!-- App Identifier -->
         <ApplicationId>com.companyname.ss23_swen2_tourplanner</ApplicationId>
