@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace SS23_SWEN2_TourPlanner.Views;
 
-public partial class ToursView : ContentView
+public partial class ModalPage : ContentPage
 {
-    public ToursView()
+    public ModalPage()
     {
         InitializeComponent();
     }
 
-    private async void Button_OnClicked(object sender, EventArgs e)
+    private void Button_OnClicked(object sender, EventArgs e)
     {
-        await Navigation.PushModalAsync(new ModalPage());
+        Navigation.PopModalAsync();
     }
 }

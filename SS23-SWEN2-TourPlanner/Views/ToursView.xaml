@@ -11,7 +11,7 @@
         <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceBetween" HeightRequest="40">
             <Label FontSize="21">Tours</Label>
             <HorizontalStackLayout Spacing="5" HeightRequest="40">
-                <Button Text="+" FontSize="21" />
+                <Button Text="+" FontSize="21" Clicked="Button_OnClicked" />
                 <Button Text="-" FontSize="21" />
                 <Button Text="..." FontSize="21" />
             </HorizontalStackLayout>
