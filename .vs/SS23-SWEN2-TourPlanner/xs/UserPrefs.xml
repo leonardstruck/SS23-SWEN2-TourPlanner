@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{EC20DE93-737B-4401-8AD7-B7F042F34DE4}|Default">
+  <MonoDevelop.Ide.ItemProperties.SS23-SWEN2-TourPlanner PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Test PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SS23-SWEN2-TourPlanner" expanded="True" selected="True">
+            <Node name="SS23-SWEN2-TourPlanner" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
