@@ -1,20 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:TourPlanner.Models;assembly=TourPlanner.Models"
+             xmlns:viewmodel="clr-namespace:Tourplanner.ViewModels;assembly=Tourplanner.ViewModels"
              x:Class="SS23_SWEN2_TourPlanner.Views.ToursView"
+             x:DataType="viewmodel:ToursViewModel"
              >
+
     <VerticalStackLayout>
-        <HorizontalStackLayout>
-            
-        </HorizontalStackLayout>
-        <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceBetween" HeightRequest="40">
+        <VerticalStackLayout HeightRequest="40">
             <Label FontSize="21">Tours</Label>
             <HorizontalStackLayout Spacing="5" HeightRequest="40">
                 <Button Text="+" FontSize="21" Clicked="Button_OnClicked" />
                 <Button Text="-" FontSize="21" />
                 <Button Text="..." FontSize="21" />
             </HorizontalStackLayout>
-        </FlexLayout>
+            <CollectionView
+                ItemsSource="{Binding Tours}"
+                VerticalOptions="FillAndExpand"
+                >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Tour">
+                        <Frame>
+                            <VerticalStackLayout>
+                                <HorizontalStackLayout
+                                    Spacing="10">
+                                    <Label Text="{Binding Name}"
+                                           FontSize="18"
+                                           VerticalTextAlignment="Center"
+                                           LineBreakMode="WordWrap"
+                                           />
+                                    <VerticalStackLayout>
+                                        <Label Text="{Binding Description}" LineBreakMode="WordWrap"/>
+                                        <!-- Hier kommen dann noch die Elemente rein
+                                        die wir zeigen wollen -->
+                                    </VerticalStackLayout>
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>                            
+                        </Frame>
+                        
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+        </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentView>
