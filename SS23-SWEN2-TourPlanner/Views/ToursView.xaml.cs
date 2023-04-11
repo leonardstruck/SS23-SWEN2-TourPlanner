@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,14 +15,27 @@ public partial class ToursView : ContentView
     //    InitializeComponent();
     //}
 
+
+    ToursViewModel toursViewModel = new();
+
+
+    //Todo: Hier stimmt noch was nicht.. ich glaube man muss das ViewModel im Konstruktor mitgeben??
     public ToursView()
     {
         InitializeComponent();
-        BindingContext = new ToursViewModel();
+        BindingContext = toursViewModel;
     }
 
-    private async void Button_OnClicked(object sender, EventArgs e)
+    //private async void Button_OnClicked(object sender, EventArgs e)
+    //{
+    //    await Navigation.PushModalAsync(new ModalPage());
+    //    toursViewModel.addTour();
+    //}
+
+    private void Button_OnClicked(object sender, EventArgs e)
     {
-        await Navigation.PushModalAsync(new ModalPage());
+        //await Navigation.PushModalAsync(new ModalPage());
+        toursViewModel.addTour();
+        Debug.WriteLine("Button clicked");
     }
 }
