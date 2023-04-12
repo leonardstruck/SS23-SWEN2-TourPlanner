@@ -9,16 +9,18 @@
              >
 
     <VerticalStackLayout>
-        <VerticalStackLayout HeightRequest="40">
+        <VerticalStackLayout>
             <Label FontSize="21">Tours</Label>
             <HorizontalStackLayout Spacing="5" HeightRequest="40">
                 <Button Text="+" FontSize="21" Command="{Binding addTourCommand}" IsEnabled="{Binding IsNotBusy}"/>
                 <Button Text="-" FontSize="21" />
                 <Button Text="..." FontSize="21" />
             </HorizontalStackLayout>
+            <ScrollView>
             <CollectionView
                 ItemsSource="{Binding Tours}"
                 VerticalOptions="FillAndExpand"
+                WidthRequest="300"
                 >
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Tour">
@@ -45,6 +47,7 @@
                 </CollectionView.ItemTemplate>
 
             </CollectionView>
+            </ScrollView>
         </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentView>
