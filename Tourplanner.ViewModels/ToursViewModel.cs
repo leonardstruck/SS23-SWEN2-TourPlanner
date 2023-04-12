@@ -14,7 +14,6 @@ public partial class ToursViewModel : BaseViewModel
 
     public ToursViewModel()
     {
-        Title = "Tours";
         Tours.Add(new Tour());
         Tours.Add(new Tour());
         foreach (var tour in Tours) {

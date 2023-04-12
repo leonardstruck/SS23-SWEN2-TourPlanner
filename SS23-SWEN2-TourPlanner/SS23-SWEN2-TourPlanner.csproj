@@ -58,10 +58,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Models" />
-    </ItemGroup>
-
-    <ItemGroup>
       <MauiXaml Update="Views\DemoPage.xaml">
         <SubType>Designer</SubType>
       </MauiXaml>
