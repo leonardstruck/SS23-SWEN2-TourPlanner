@@ -71,6 +71,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\TourPlanner.DAL\TourPlanner.DAL.csproj" />
+      <ProjectReference Include="..\TourPlanner.Models\TourPlanner.Models.csproj" />
       <ProjectReference Include="..\Tourplanner.ViewModels\Tourplanner.ViewModels.csproj" />
     </ItemGroup>
 </Project>
