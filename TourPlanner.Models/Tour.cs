@@ -5,10 +5,11 @@ namespace TourPlanner.Models
 {
 	public class Tour
 	{
+		public int Id { get; set; }
 		public string Name { get; set; }
 		public string Description { get; set; }
-		public Point From { get; set; }
-        public Point To { get; set; }
+		public string From { get; set; }
+        public string To { get; set; }
 		public string TransportType { get; set; }
 		public double Distance { get; set; }
         public double Time { get; set; }
@@ -20,12 +21,12 @@ namespace TourPlanner.Models
 			Name = "TourName";
 			Description = "This is a very cool tour! Your should try it :)";
 			Distance = 4.3;
-			From = new Point(1,1);
-			To = new Point(2,2);
+			From = "1010 Wien";
+			To = "1200 Wien";
 			Information = "coole Strecke";
 			Time = 5.4;
-			TransportType = "Bike";
-
+			TransportType = "Bicycle";
+			
 		}
     }
 }
