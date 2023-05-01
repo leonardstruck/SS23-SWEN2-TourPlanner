@@ -14,16 +14,14 @@ public partial class ToursView : ContentView
     //{
     //    InitializeComponent();
     //}
-
-
-    ToursViewModel toursViewModel = new();
-
-
+    private ToursViewModel _toursViewModel;
+    
     //Todo: Hier stimmt noch was nicht.. ich glaube man muss das ViewModel im Konstruktor mitgeben??
     public ToursView()
     {
         InitializeComponent();
-        BindingContext = toursViewModel;
+        _toursViewModel = Helpers.ServiceHelper.GetService<ToursViewModel>();
+        BindingContext = _toursViewModel;
     }
 
     //private async void Button_OnClicked(object sender, EventArgs e)
@@ -35,10 +33,8 @@ public partial class ToursView : ContentView
     public void Button_OnClicked(object sender, EventArgs e)
     {
         Console.WriteLine("HALLO");
-        
+        _toursViewModel.addTour();
         //await Navigation.PushModalAsync(new ModalPage());
-        toursViewModel.addTour();
-        
         Debug.WriteLine("Button clicked");
     }
 }

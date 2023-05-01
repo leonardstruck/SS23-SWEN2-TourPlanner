@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SS23_SWEN2_TourPlanner.Views.MainPage"
              xmlns:local="clr-namespace:SS23_SWEN2_TourPlanner.Views"
+             xmlns:viewModels="clr-namespace:Tourplanner.ViewModels;assembly=Tourplanner.ViewModels"
              >
     <Grid>
         <Grid.ColumnDefinitions>
@@ -15,7 +16,8 @@
         </Grid.RowDefinitions>
         <!-- sidebar -->
         <Frame Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Padding="10" Margin="20" BackgroundColor="Transparent" BorderColor="Transparent">
-            <local:ToursView />
+            <local:ToursView>
+            </local:ToursView>
         </Frame>
         <!-- main view -->
         <Frame Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Padding="10" Margin="20">

@@ -9,11 +9,12 @@ using Tourplanner.ViewModels;
 namespace SS23_SWEN2_TourPlanner.Views;
 
 public partial class MainPage : ContentPage
-{  
-    public MainPage()
+{
+   
+    public MainPage(ToursViewModel toursViewModel)
     {
         InitializeComponent();
-        
+        BindingContext = toursViewModel;   
     }
 
     private async void Button_OnClicked(object sender, EventArgs e)
