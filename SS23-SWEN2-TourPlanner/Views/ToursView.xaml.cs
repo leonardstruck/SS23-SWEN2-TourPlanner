@@ -30,11 +30,11 @@ public partial class ToursView : ContentView
     //    toursViewModel.addTour();
     //}
 
-    public void Button_OnClicked(object sender, EventArgs e)
+    public async void Button_OnClicked(object sender, EventArgs e)
     {
         Console.WriteLine("HALLO");
-        _toursViewModel.AddTour();
-        //await Navigation.PushModalAsync(new ModalPage());
+        // _toursViewModel.AddTour();
+        await Navigation.PushModalAsync(new ModalPage());
         Debug.WriteLine("Button clicked");
     }
 }

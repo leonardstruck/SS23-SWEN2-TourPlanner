@@ -2,11 +2,23 @@
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SS23_SWEN2_TourPlanner.Views.ModalPage">
+             x:Class="SS23_SWEN2_TourPlanner.Views.ModalPage"
+>
     <ContentPage.Content>
+
         <StackLayout>
             <Label>This is a Modal Page</Label>
             <Button Text="Close Modal" Clicked="Button_OnClicked" />
+            
+            <Entry x:Name="title" Placeholder="Enter Title" Text="{Binding Name }"/>
+            <Entry x:Name="description" Placeholder="Enter Description" Text="{Binding Description}" />
+            <Entry x:Name="from" Placeholder="Enter From" Text="{Binding From}"/>
+            <Entry x:Name="to" Placeholder="Enter To" Text="{Binding To}"/>
+            <Entry x:Name="transport_type" Placeholder="Enter Transport Type" Text="{Binding TransportType}"/>
+            
+            <Button Text="Add Tour" Clicked="AddTour_OnClicked" />
+            
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

@@ -21,7 +21,7 @@ public partial class ToursViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    public void AddTour()
+    public void AddTour(Tour tour)
     {
         Debug.WriteLine("adding Tour");
         if (IsBusy)
@@ -31,8 +31,8 @@ public partial class ToursViewModel : BaseViewModel
         {
             IsBusy = true;
             Debug.WriteLine("adding tour");
-            Tours.Add(new Tour());
-            _tourRepository.AddTour(new Tour());
+            Tours.Add(tour);
+            _tourRepository.AddTour(tour);
         }
         catch (Exception e)
         {
