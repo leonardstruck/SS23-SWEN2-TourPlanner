@@ -45,5 +45,16 @@ public partial class ToursViewModel : BaseViewModel
 
         
     }
+    
+    [RelayCommand]
+    async Task GoToDetails(Tour tour)
+    {
+        Debug.WriteLine("Go to Details");
+        var navigationParameter = new Dictionary<string, object>
+        {
+            { "Tour", tour }
+        };
+        await Shell.Current.GoToAsync($"//TourDetailView", navigationParameter);
+    }
 }
 

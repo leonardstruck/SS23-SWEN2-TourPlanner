@@ -29,7 +29,7 @@ public static class MauiProgram
 #if DEBUG
         builder.Logging.AddDebug();
 #endif
-        
+
         builder.Services.AddSingleton<TourDbContext>();
         builder.Services.AddSingleton<ToursViewModel>();
         builder.Services.AddTransient<ToursView>();
@@ -37,7 +37,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<MainPage>();
         
         builder.Services.AddSingleton<TourRepository>();
-
+        
         var app = builder.Build();
 
         // initialize db
