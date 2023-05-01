@@ -3,16 +3,16 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:TourPlanner.Models;assembly=TourPlanner.Models"
-             xmlns:viewmodel="clr-namespace:Tourplanner.ViewModels;assembly=Tourplanner.ViewModels"
+             xmlns:viewmodels="clr-namespace:SS23_SWEN2_TourPlanner.ViewModels"
              x:Class="SS23_SWEN2_TourPlanner.Views.ToursView"
-             x:DataType="viewmodel:ToursViewModel"
+             x:DataType="viewmodels:ToursViewModel"
              >
 
     <VerticalStackLayout>
         <VerticalStackLayout>
             <Label FontSize="21">Tours</Label>
             <HorizontalStackLayout Spacing="5" HeightRequest="40">
-                <Button Text="+" FontSize="21" Command="{Binding addTourCommand}" IsEnabled="{Binding IsNotBusy}"/>
+                <Button Text="+" FontSize="21" Command="{Binding AddTourCommand}" IsEnabled="{Binding IsNotBusy}"/>
                 <Button Text="-" FontSize="21" />
                 <Button Text="..." FontSize="21" />
             </HorizontalStackLayout>

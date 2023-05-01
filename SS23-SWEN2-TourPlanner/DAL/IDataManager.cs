@@ -1,7 +1,8 @@
 ﻿using System;
 using TourPlanner.Models;
 
-namespace TourPlanner.DAL
+
+namespace SS23_SWEN2_TourPlanner.DAL
 {
 	public interface IDataManager
 	{

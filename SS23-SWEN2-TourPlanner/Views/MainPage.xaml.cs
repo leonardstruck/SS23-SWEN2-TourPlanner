@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SS23_SWEN2_TourPlanner.ViewModels;
 using TourPlanner.Models;
-using Tourplanner.ViewModels;
 
 namespace SS23_SWEN2_TourPlanner.Views;
 

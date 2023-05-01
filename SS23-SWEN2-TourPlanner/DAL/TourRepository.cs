@@ -1,15 +1,15 @@
 using System.Data;
 using TourPlanner.Models;
 
-namespace TourPlanner.DAL;
+namespace SS23_SWEN2_TourPlanner.DAL;
 
 public class TourRepository
 {
     private readonly TourDbContext _tourDbContext;
     
-    public TourRepository(TourDbContext tourDbContext)
+    public TourRepository()
     {
-        _tourDbContext = tourDbContext;
+        _tourDbContext = Helpers.ServiceHelper.GetService<TourDbContext>();
     }
     
     public ICollection<Tour> GetTours()

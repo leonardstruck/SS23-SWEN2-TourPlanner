@@ -1,5 +1,5 @@
 ﻿using TourPlanner.Models;
-namespace TourPlanner.DAL;
+namespace SS23_SWEN2_TourPlanner.DAL;
 
 public class DataManagerMemory : IDataManager
 {

@@ -1,10 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
-using System.Diagnostics;
-using Microsoft.EntityFrameworkCore;
+using SS23_SWEN2_TourPlanner.DAL;
+using SS23_SWEN2_TourPlanner.ViewModels;
 using SS23_SWEN2_TourPlanner.Views;
-using Tourplanner.ViewModels;
-using TourPlanner.DAL;
-using TourPlanner.Models;
 
 namespace SS23_SWEN2_TourPlanner;
 
@@ -34,7 +31,7 @@ public static class MauiProgram
 #endif
         
         builder.Services.AddSingleton<TourDbContext>();
-        builder.Services.AddSingleton<ToursViewModel>(x => new ToursViewModel());
+        builder.Services.AddSingleton<ToursViewModel>();
         builder.Services.AddTransient<ToursView>();
         
         builder.Services.AddSingleton<MainPage>();
@@ -44,7 +41,7 @@ public static class MauiProgram
         var app = builder.Build();
 
         // initialize db
-        using var db = app.Services.GetService<TourDbContext>();
+        var db = app.Services.GetService<TourDbContext>();
         db.Database.EnsureCreated();
 
         return app;

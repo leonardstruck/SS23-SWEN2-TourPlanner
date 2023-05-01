@@ -1,33 +1,28 @@
 ﻿<Properties StartupConfiguration="{EC20DE93-737B-4401-8AD7-B7F042F34DE4}|Default">
-  <MonoDevelop.Ide.ItemProperties.SS23-SWEN2-TourPlanner PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.ItemProperties.TourPlanner.DAL FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Test PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="Tourplanner.ViewModels/ToursViewModel.cs">
     <Files>
       <File FileName="TourPlanner.DAL/Class1.cs" />
       <File FileName="TourPlanner.DAL/IDataManager.cs" />
-      <File FileName="TourPlanner.DAL/TaskDbContext.cs" />
-      <File FileName="TourPlanner.Models/Tour.cs" Line="21" Column="66" />
+      <File FileName="TourPlanner.Models/Tour.cs" />
       <File FileName="TourPlanner.Models/Point.cs" />
       <File FileName="TourPlanner.Models/TourLog.cs" />
-      <File FileName="TourPlanner.Models/User.cs" Line="10" Column="10" />
+      <File FileName="TourPlanner.Models/User.cs" />
       <File FileName="SS23-SWEN2-TourPlanner/Views/ModalPage.xaml" />
-      <File FileName="SS23-SWEN2-TourPlanner/Views/MainPage.xaml" Line="17" Column="13" />
-      <File FileName="SS23-SWEN2-TourPlanner/Views/MainPage.xaml.cs" Line="16" Column="9" />
+      <File FileName="SS23-SWEN2-TourPlanner/Views/MainPage.xaml" />
+      <File FileName="SS23-SWEN2-TourPlanner/Views/MainPage.xaml.cs" />
       <File FileName="TourPlanner.DAL/TourPlannerDBContext.cs" />
-      <File FileName="SS23-SWEN2-TourPlanner/Views/ToursView.xaml" Line="25" Column="31" />
-      <File FileName="SS23-SWEN2-TourPlanner/Views/ToursView.xaml.cs" Line="24" Column="6" />
-      <File FileName="SS23-SWEN2-TourPlanner/MauiProgram.cs" Line="23" Column="36" />
-      <File FileName="SS23-SWEN2-TourPlanner/Views/ModalPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="SS23-SWEN2-TourPlanner/Platforms/MacCatalyst/Program.cs" Line="15" Column="2" />
-      <File FileName="SS23-SWEN2-TourPlanner/AppShell.xaml.cs" Line="1" Column="1" />
+      <File FileName="SS23-SWEN2-TourPlanner/Views/ToursView.xaml" />
+      <File FileName="SS23-SWEN2-TourPlanner/Views/ToursView.xaml.cs" />
+      <File FileName="SS23-SWEN2-TourPlanner/MauiProgram.cs" />
+      <File FileName="SS23-SWEN2-TourPlanner/Views/ModalPage.xaml.cs" />
+      <File FileName="SS23-SWEN2-TourPlanner/Platforms/MacCatalyst/Program.cs" />
+      <File FileName="SS23-SWEN2-TourPlanner/AppShell.xaml.cs" />
       <File FileName="SS23-SWEN2-TourPlanner/App.xaml.cs" />
       <File FileName="Tourplanner.ViewModels/ToursViewModel.cs" Line="14" Column="31" />
-      <File FileName="SS23-SWEN2-TourPlanner/Views/DemoPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="SS23-SWEN2-TourPlanner/AppShell.xaml" Line="1" Column="1" />
+      <File FileName="SS23-SWEN2-TourPlanner/Views/DemoPage.xaml.cs" />
+      <File FileName="SS23-SWEN2-TourPlanner/AppShell.xaml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -54,7 +49,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TourPlanner.DAL FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SS23-SWEN2-TourPlanner PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Test PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

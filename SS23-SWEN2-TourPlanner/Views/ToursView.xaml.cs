@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tourplanner.ViewModels;
+using SS23_SWEN2_TourPlanner.ViewModels;
 
 namespace SS23_SWEN2_TourPlanner.Views;
 
@@ -33,7 +33,7 @@ public partial class ToursView : ContentView
     public void Button_OnClicked(object sender, EventArgs e)
     {
         Console.WriteLine("HALLO");
-        _toursViewModel.addTour();
+        _toursViewModel.AddTour();
         //await Navigation.PushModalAsync(new ModalPage());
         Debug.WriteLine("Button clicked");
     }

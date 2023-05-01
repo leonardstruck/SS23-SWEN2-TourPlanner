@@ -1,7 +1,7 @@
 ﻿using System;
 using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace Tourplanner.ViewModels;
+namespace SS23_SWEN2_TourPlanner.ViewModels;
 
 public partial class BaseViewModel : ObservableObject
 {

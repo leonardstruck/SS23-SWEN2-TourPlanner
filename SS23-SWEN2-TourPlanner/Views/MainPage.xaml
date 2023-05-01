@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SS23_SWEN2_TourPlanner.Views.MainPage"
              xmlns:local="clr-namespace:SS23_SWEN2_TourPlanner.Views"
-             xmlns:viewModels="clr-namespace:Tourplanner.ViewModels;assembly=Tourplanner.ViewModels"
+             xmlns:viewModels="clr-namespace:SS23_SWEN2_TourPlanner.ViewModels"
              >
     <Grid>
         <Grid.ColumnDefinitions>
