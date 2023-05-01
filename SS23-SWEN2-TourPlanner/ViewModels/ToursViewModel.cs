@@ -10,6 +10,8 @@ namespace SS23_SWEN2_TourPlanner.ViewModels;
 public partial class ToursViewModel : BaseViewModel
 {
     public ObservableCollection<Tour> Tours { get; set; }
+    public Tour SelectedTour { get; set; }
+    
     // Service
 
     private readonly TourRepository _tourRepository;
@@ -18,6 +20,7 @@ public partial class ToursViewModel : BaseViewModel
     {
         _tourRepository = Helpers.ServiceHelper.GetService<TourRepository>();
         Tours = new ObservableCollection<Tour>(_tourRepository.GetTours());
+        SelectedTour = Tours.FirstOrDefault();
     }
 
     [RelayCommand]
@@ -50,11 +53,9 @@ public partial class ToursViewModel : BaseViewModel
     async Task GoToDetails(Tour tour)
     {
         Debug.WriteLine("Go to Details");
-        var navigationParameter = new Dictionary<string, object>
-        {
-            { "Tour", tour }
-        };
-        await Shell.Current.GoToAsync($"//TourDetailView", navigationParameter);
+        SelectedTour = tour;
+        
+        //await Shell.Current.GoToAsync($"//TourDetailView");
     }
 }
 
