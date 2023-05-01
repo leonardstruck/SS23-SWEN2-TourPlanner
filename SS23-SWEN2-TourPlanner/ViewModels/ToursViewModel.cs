@@ -55,7 +55,7 @@ public partial class ToursViewModel : BaseViewModel
         Debug.WriteLine("Go to Details");
         SelectedTour = tour;
         
-        //await Shell.Current.GoToAsync($"//TourDetailView");
+        await Shell.Current.GoToAsync($"//TourDetailView");
     }
 }
 

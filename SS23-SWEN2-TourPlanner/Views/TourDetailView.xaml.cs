@@ -9,7 +9,7 @@ using TourPlanner.Models;
 namespace SS23_SWEN2_TourPlanner.Views;
 
 [QueryProperty(nameof(Tour), "Tour")]
-public partial class TourDetailView : ContentView
+public partial class TourDetailView : ContentPage
 {
     private ToursViewModel _toursViewModel;
     private Tour tour;
