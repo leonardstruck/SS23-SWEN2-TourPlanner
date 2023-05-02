@@ -31,9 +31,7 @@ public partial class ModalPage : ContentPage
     {
         var tour = (Tour)BindingContext;
         Console.WriteLine("Add Tour");
-        
-        tour.Information = System.IO.Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "TourPlanner", "Maps", $"{tour.Name}.png");
-        
+
         _toursViewModel.AddTour(tour);
         Navigation.PopModalAsync();
     }

@@ -19,8 +19,8 @@ public class TourRepository
 
     public async void AddTour(Tour newTour)
     {
-        var mapApi = new MapApi(newTour);
-        await mapApi.CreateMap();
+        var mapApi = new Map(newTour);
+        newTour.Information = await mapApi.CreateMap();
         _tourDbContext.Tours.Add(newTour);
         _tourDbContext.SaveChanges();
     }
