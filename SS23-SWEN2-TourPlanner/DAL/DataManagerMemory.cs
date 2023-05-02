@@ -8,7 +8,7 @@ public class DataManagerMemory : IDataManager
 
 	public DataManagerMemory()
 	{
-		_tours.Add(new Tour{ Distance = 0, Description = "", From = "", Information = "", Name = "", Time = 0, To = "", TransportType = "" });
+		_tours.Add(new Tour{ Distance = 0, Description = "", From = "", Name = "", Time = 0, To = "", TransportType = "" });
 	}
 
 	public ICollection<Tour> GetTours() {

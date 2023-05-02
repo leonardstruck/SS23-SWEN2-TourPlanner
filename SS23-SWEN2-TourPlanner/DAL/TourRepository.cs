@@ -17,8 +17,10 @@ public class TourRepository
         return _tourDbContext.Tours.ToList();
     }
 
-    public void AddTour(Tour newTour)
+    public async void AddTour(Tour newTour)
     {
+        var mapApi = new MapApi(newTour);
+        await mapApi.CreateMap();
         _tourDbContext.Tours.Add(newTour);
         _tourDbContext.SaveChanges();
     }

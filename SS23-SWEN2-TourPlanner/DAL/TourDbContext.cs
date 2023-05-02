@@ -14,7 +14,13 @@ namespace SS23_SWEN2_TourPlanner.DAL
 		{
 			var folder = Environment.SpecialFolder.LocalApplicationData;
 			var path = Environment.GetFolderPath(folder);
-			DbPath = System.IO.Path.Join(path, "tour.db");
+			DbPath = System.IO.Path.Join(path, "TourPlanner" ,"tour.db");
+			
+			// ToDo: outsource this to a config class or something
+			if (!System.IO.Directory.Exists(System.IO.Path.Join(path, "TourPlanner")))
+			{
+				System.IO.Directory.CreateDirectory(System.IO.Path.Join(path, "TourPlanner"));
+			}
 		}
 
 		public TourDbContext(string dbPath)
