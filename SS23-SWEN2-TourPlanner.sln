@@ -1,8 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SS23-SWEN2-TourPlanner", "SS23-SWEN2-TourPlanner\SS23-SWEN2-TourPlanner.csproj", "{EC20DE93-737B-4401-8AD7-B7F042F34DE4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{9CBB5870-897F-4982-A633-CD47A4C0CD8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourPlanner.DAL", "TourPlanner.DAL\TourPlanner.DAL.csproj", "{26219209-94BE-4C59-AAE3-2345F11240F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourPlanner.Models", "TourPlanner.Models\TourPlanner.Models.csproj", "{1C656EEB-A118-46A6-97A2-5BD65F704238}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tourplanner.ViewModels", "Tourplanner.ViewModels\Tourplanner.ViewModels.csproj", "{4F90DDA7-8579-416E-9258-19E069CE8666}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +25,17 @@ Global
 		{9CBB5870-897F-4982-A633-CD47A4C0CD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CBB5870-897F-4982-A633-CD47A4C0CD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CBB5870-897F-4982-A633-CD47A4C0CD8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26219209-94BE-4C59-AAE3-2345F11240F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26219209-94BE-4C59-AAE3-2345F11240F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26219209-94BE-4C59-AAE3-2345F11240F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26219209-94BE-4C59-AAE3-2345F11240F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C656EEB-A118-46A6-97A2-5BD65F704238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C656EEB-A118-46A6-97A2-5BD65F704238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C656EEB-A118-46A6-97A2-5BD65F704238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C656EEB-A118-46A6-97A2-5BD65F704238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F90DDA7-8579-416E-9258-19E069CE8666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F90DDA7-8579-416E-9258-19E069CE8666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F90DDA7-8579-416E-9258-19E069CE8666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F90DDA7-8579-416E-9258-19E069CE8666}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

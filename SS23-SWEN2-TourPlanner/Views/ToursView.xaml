@@ -1,20 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
-<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:TourPlanner.Models;assembly=TourPlanner.Models"
+             xmlns:viewmodels="clr-namespace:SS23_SWEN2_TourPlanner.ViewModels"
              x:Class="SS23_SWEN2_TourPlanner.Views.ToursView"
+             x:DataType="viewmodels:ToursViewModel"
              >
+
     <VerticalStackLayout>
-        <HorizontalStackLayout>
-            
-        </HorizontalStackLayout>
-        <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceBetween" HeightRequest="40">
+        <VerticalStackLayout>
             <Label FontSize="21">Tours</Label>
             <HorizontalStackLayout Spacing="5" HeightRequest="40">
-                <Button Text="+" FontSize="21" Clicked="Button_OnClicked" />
-                <Button Text="-" FontSize="21" />
+                <Button Text="+" FontSize="21" Clicked="Button_OnClicked" IsEnabled="{Binding IsNotBusy}"/>
+                <Button Text="-" FontSize="21" Clicked="Button_Remove_OnClicked"/>
                 <Button Text="..." FontSize="21" />
             </HorizontalStackLayout>
-        </FlexLayout>
+            <ScrollView>
+            <CollectionView
+                ItemsSource="{Binding Tours}"
+                VerticalOptions="FillAndExpand"
+                WidthRequest="300"
+                >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Tour">
+                        <Frame>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:ToursViewModel}}, Path=GoToDetailsCommand}"
+                                                      CommandParameter="{Binding .}" />
+                            </Frame.GestureRecognizers>
+                            <VerticalStackLayout>
+                                <HorizontalStackLayout
+                                    Spacing="10">
+                                    <Label Text="{Binding Name}"
+                                           FontSize="18"
+                                           VerticalTextAlignment="Center"
+                                           LineBreakMode="WordWrap"
+                                           />
+                                    <VerticalStackLayout>
+                                        <Label Text="{Binding Description}" LineBreakMode="WordWrap"/>
+                                        <!-- Hier kommen dann noch die Elemente rein
+                                        die wir zeigen wollen -->
+                                    </VerticalStackLayout>
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>                            
+                        </Frame>
+                        
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+            </ScrollView>
+        </VerticalStackLayout>
     </VerticalStackLayout>
-</ContentView>
+</ContentPage>

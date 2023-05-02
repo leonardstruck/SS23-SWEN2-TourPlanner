@@ -8,7 +8,11 @@
     NavBarIsVisible="False"
     >
     <ShellContent
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:ToursView}"
+        Route="Tours" />
+    
+    <ShellContent
+        ContentTemplate="{DataTemplate local:TourDetailView}"
+        Route="TourDetailView" />
 
 </Shell>
