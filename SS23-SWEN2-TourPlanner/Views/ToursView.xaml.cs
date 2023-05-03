@@ -4,20 +4,17 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
 using SS23_SWEN2_TourPlanner.ViewModels;
 using TourPlanner.Models;
 
 namespace SS23_SWEN2_TourPlanner.Views;
 
-public partial class ToursView : ContentPage
+public partial class ToursView : ContentView
 {
-    //public ToursView()
-    //{
-    //    InitializeComponent();
-    //}
     private ToursViewModel _toursViewModel;
-    private Tour _currentTour;
-    
+
     //Todo: Hier stimmt noch was nicht.. ich glaube man muss das ViewModel im Konstruktor mitgeben??
     public ToursView()
     {
@@ -26,12 +23,7 @@ public partial class ToursView : ContentPage
         
         BindingContext = _toursViewModel;
     }
-
-    //private async void Button_OnClicked(object sender, EventArgs e)
-    //{
-    //    await Navigation.PushModalAsync(new ModalPage());
-    //    toursViewModel.addTour();
-    //}
+    
 
     public async void Button_OnClicked(object sender, EventArgs e)
     {

@@ -10,13 +10,11 @@ namespace SS23_SWEN2_TourPlanner.Views;
 
 public partial class MainPage : ContentPage
 {
-    
-    Tour _tour = new Tour();
-   
+    //private Tour _tour = new Tour();
     public MainPage()
     {
         InitializeComponent();
-        BindingContext = _tour;
+        //BindingContext = _tour;
     }
 
     private async void Button_OnClicked(object sender, EventArgs e)
