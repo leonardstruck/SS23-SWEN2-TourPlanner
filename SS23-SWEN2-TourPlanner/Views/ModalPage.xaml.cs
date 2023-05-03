@@ -31,7 +31,7 @@ public partial class ModalPage : ContentPage
     {
         var tour = (Tour)BindingContext;
         Console.WriteLine("Add Tour");
-        
+
         _toursViewModel.AddTour(tour);
         Navigation.PopModalAsync();
     }

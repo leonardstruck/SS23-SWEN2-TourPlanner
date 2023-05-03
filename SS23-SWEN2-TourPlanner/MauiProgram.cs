@@ -33,6 +33,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<TourDbContext>();
         builder.Services.AddSingleton<ToursViewModel>();
         builder.Services.AddTransient<ToursView>();
+        builder.Services.AddTransient<TourDetailView>();
         
         builder.Services.AddSingleton<MainPage>();
         

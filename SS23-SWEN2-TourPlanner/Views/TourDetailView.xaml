@@ -7,7 +7,9 @@
              x:DataType="model:Tour">
     <ContentPage.Content>
         <VerticalStackLayout>
-            <Label Text="{Binding Name}"/>
+            <Label Text="{Binding Name}" FontSize="24"/>
+            <Label Text="{Binding Description}"/>
+            <Image Source="{Binding Information}" />
         </VerticalStackLayout>
     </ContentPage.Content>
 </ContentPage>
