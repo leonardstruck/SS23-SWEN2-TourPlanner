@@ -13,7 +13,7 @@ namespace SS23_SWEN2_TourPlanner.Views;
 //[QueryProperty(nameof(Tour), "Tour")]
 public partial class TourDetailView : ContentView
 {
-    private ToursViewModel _toursViewModel;
+    private readonly ToursViewModel _toursViewModel;
 
     public TourDetailView()
     {
